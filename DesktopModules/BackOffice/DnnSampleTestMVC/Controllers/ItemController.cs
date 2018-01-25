@@ -22,10 +22,17 @@ using DotNetNuke.Framework.JavaScriptLibraries;
 
 namespace Christoc.Modules.DnnSampleTestMVC.Controllers
 {
+    
     [DnnHandleError]
     public class ItemController : DnnController
     {
-
+        private int _moduleId;
+        private IItemManager _itemManager;
+        public ItemController(IItemManager itemManager, int moduleId)
+        {
+            _moduleId = moduleId;
+            _itemManager = itemManager;
+        }
         public ActionResult Delete(int itemId)
         {
             ItemManager.Instance.DeleteItem(itemId, ModuleContext.ModuleId);
@@ -34,17 +41,27 @@ namespace Christoc.Modules.DnnSampleTestMVC.Controllers
 
         public ActionResult Edit(int itemId = -1)
         {
-            DotNetNuke.Framework.JavaScriptLibraries.JavaScript.RequestRegistration(CommonJs.DnnPlugins);
+            // Ignore registration errors for unit tests.
+            try { DotNetNuke.Framework.JavaScriptLibraries.JavaScript.RequestRegistration(CommonJs.DnnPlugins); }
+            catch { }
 
-            var userlist = UserController.GetUsers(PortalSettings.PortalId);
-            var users = from user in userlist.Cast<UserInfo>().ToList()
-                        select new SelectListItem { Text = user.DisplayName, Value = user.UserID.ToString() };
+            if (PortalSettings != null)
+            {
+                var userlist = UserController.GetUsers(PortalSettings.PortalId);
+                var users = from user in userlist.Cast<UserInfo>().ToList()
+                            select new SelectListItem { Text = user.DisplayName, Value = user.UserID.ToString() };
 
-            ViewBag.Users = users;
+                ViewBag.Users = users;
+            }
+
+            if (ModuleContext != null)
+            {
+                _moduleId = ModuleContext.ModuleId;
+            }
 
             var item = (itemId == -1)
-                 ? new Item { ModuleId = ModuleContext.ModuleId }
-                 : ItemManager.Instance.GetItem(itemId, ModuleContext.ModuleId);
+                ? new Item { ModuleId = _moduleId }
+                : _itemManager.GetItem(itemId, _moduleId);
 
             return View(item);
         }

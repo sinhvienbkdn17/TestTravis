@@ -17,7 +17,7 @@ using Christoc.Modules.DnnSampleTestMVC.Models;
 
 namespace Christoc.Modules.DnnSampleTestMVC.Components
 {
-    interface IItemManager
+    public interface IItemManager
     {
         void CreateItem(Item t);
         void DeleteItem(int itemId, int moduleId);
@@ -27,7 +27,7 @@ namespace Christoc.Modules.DnnSampleTestMVC.Components
         void UpdateItem(Item t);
     }
 
-    class ItemManager : ServiceLocator<IItemManager, ItemManager>, IItemManager
+    public class ItemManager : ServiceLocator<IItemManager, ItemManager>, IItemManager
     {
         public void CreateItem(Item t)
         {
