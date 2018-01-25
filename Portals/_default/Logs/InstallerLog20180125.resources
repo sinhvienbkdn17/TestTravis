@@ -1,0 +1,17 @@
+01/24/2018 17:40:31 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:File Management
+01/24/2018 17:40:31 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:File Management
+01/24/2018 17:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:116
+01/24/2018 17:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:116
+01/24/2018 17:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddAdminPage:File Management
+01/24/2018 17:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:View
+01/24/2018 17:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPagePermission:Edit
+01/24/2018 17:40:34 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:File Management
+01/24/2018 17:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:116
+01/24/2018 17:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:116
+01/24/2018 17:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveHostPage:File Manager
+01/24/2018 17:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveAdminPages://Admin//FileManager
+01/24/2018 17:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddHostPage:HTML Editor Manager
+01/24/2018 17:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddPage:HTML Editor Manager
+01/24/2018 17:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start RemoveModule:RadEditor Manager
+01/24/2018 17:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade Start AddModuleToPage:117
+01/24/2018 17:40:35 [INFO] DotNetNuke.Services.Upgrade.Upgrade End AddModuleToPage:117
