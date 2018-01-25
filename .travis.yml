@@ -6,7 +6,7 @@ notifications:
     secure: cxBw4IWKLb/iBDltMYwg9sMhpYIJnsf+znOmlQchXn5UQEi8tHBVkDp57c79vQfJnVxBYYlVexclyUNykQnHlO0aBcsQd2VQaC3URsEgF2R9tTZTMlAd0OID3T/fRaeBvNR2PR6TAoB5Ij08EMpffuX2Wc8V5Fvp6m6nHGeQ3enfigmOn0PnzDEnFYn6jFfkkRaAuQGsraI4a9+fLqAiTVI8f4rS/Lh7B4tIJr58iPt3dM/SJJ8MxrVrAoc/zxLBWEk6VjBmAZJOxttzFQ7LEX01tJLW/Ql33c/92JyXcEhDKsd9PbM0+9brApvCAtHHyUWwvs2FoL4DB0hk2GoJZUgTBbRmxDV/XV6gSVKya+xCdSxhiwwJ3cqm2ugQEhn1TTb0qUsAGO+D/u1Q8p2x5VIk4URSbFV4T0V7f2T3n2L+2J8CKvWVcc5YPLKyBbSfElok+s1kwZk1HP2ilh7PF8I9N8QuD+7We91+q1despNdJcKAVVuU0qYpMftLsi11U92cw0kc5QEVJf9GLkCUArWnIVoaQCHbWY0kydtTDrrTr+Y1DNLpRJ/i+qeqtYzImSyJXe7qc2U1PgcM4c+kUc0orgWcchma+aquS5G3iyxBPhLiFKFIibkhVGNNuSxn9PqAGDEMiX5D5SbuPxgYPaOfatYZ9YkFl/lskuUmWGg=
 install:
 - nuget restore DnnSampleA.sln
-- nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+- nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
 script:
 - xbuild /p:Configuration=Release TestTravis.sln
-- mono ./testrunner/NUnit.Console.2.6.4/tools/nunit-console.exe ./DesktopModules/UnitTest/DnnSample.Tests/bin/Release/TestTravis.Test.dll
+- mono ./testrunner/NUnit.ConsoleRunner.3.6.1/tools/nunit3ssssss-console.exe ./DesktopModules/UnitTest/DnnSample.Tests/bin/Release/TestTravis.Test.dll
