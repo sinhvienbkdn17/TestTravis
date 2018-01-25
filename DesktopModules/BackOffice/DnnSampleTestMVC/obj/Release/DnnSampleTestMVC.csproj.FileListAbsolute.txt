@@ -1,0 +1,9 @@
+D:\DnnSample\DnnSampleA\bin\DnnSampleTestMVC.dll.config
+D:\DnnSample\DnnSampleA\bin\DnnSampleTestMVC.dll
+D:\DnnSample\DnnSampleA\bin\DnnSampleTestMVC.pdb
+D:\DnnSample\DnnSampleA\DesktopModules\BackOffice\DnnSampleTestMVC\obj\Release\DnnSampleTestMVC.csprojResolveAssemblyReference.cache
+D:\DnnSample\DnnSampleA\DesktopModules\BackOffice\DnnSampleTestMVC\obj\Release\Christoc.Modules.DnnSampleTestMVC.App_LocalResources.Settings.resources
+D:\DnnSample\DnnSampleA\DesktopModules\BackOffice\DnnSampleTestMVC\obj\Release\DnnSampleTestMVC.csproj.GenerateResource.Cache
+D:\DnnSample\DnnSampleA\DesktopModules\BackOffice\DnnSampleTestMVC\obj\Release\DnnSampleTestMVC.csproj.CoreCompileInputs.cache
+D:\DnnSample\DnnSampleA\DesktopModules\BackOffice\DnnSampleTestMVC\obj\Release\DnnSampleTestMVC.dll
+D:\DnnSample\DnnSampleA\DesktopModules\BackOffice\DnnSampleTestMVC\obj\Release\DnnSampleTestMVC.pdb
